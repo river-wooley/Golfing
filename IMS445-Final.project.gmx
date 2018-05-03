@@ -21,7 +21,8 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\script0.gml</script>
+    <script>scripts\x_prod_generate.gml</script>
+    <script>scripts\x_generate_row.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Player">

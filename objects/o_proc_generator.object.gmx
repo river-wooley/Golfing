@@ -31,6 +31,10 @@ units = 0;
 xcount = room_width / GRID_SQUARE_SIZE;
 ycount = room_height / GRID_SQUARE_SIZE;
 play_grid = ds_grid_create(xcount, ycount);
+
+maxpos = (room_width / GRID_SQUARE_SIZE) - 1;
+startingpos = irandom_range(0, maxpos) * GRID_SQUARE_SIZE;
+x_generate_row(startingpos, 0);
 </string>
           </argument>
         </arguments>
@@ -55,6 +59,7 @@ play_grid = ds_grid_create(xcount, ycount);
             <kind>1</kind>
             <string>/// Gridlines
 
+/*
 var i;
 draw_set_color(c_black);
 
@@ -62,6 +67,8 @@ for (i = 0; i &lt; room_width; i += GRID_SQUARE_SIZE)
     draw_line(i, 0, i, room_height)
 for (i = 0; i &lt; room_height; i += GRID_SQUARE_SIZE)
     draw_line(0, i, room_width, i);
+*/
+
 </string>
           </argument>
         </arguments>

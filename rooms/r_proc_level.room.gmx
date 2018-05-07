@@ -2,7 +2,7 @@
 <room>
   <caption></caption>
   <width>320</width>
-  <height>640</height>
+  <height>832</height>
   <vsnap>64</vsnap>
   <hsnap>64</hsnap>
   <isometric>0</isometric>
@@ -51,12 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="o_rough" x="0" y="64" name="inst_E2CAE728" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_fairway" x="128" y="64" name="inst_C6DBC7DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_proc_generator" x="128" y="256" name="inst_18EC7470" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_ball" x="64" y="128" name="inst_3611D1DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_fairway" x="64" y="64" name="inst_90CD200A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_bunker" x="128" y="128" name="inst_FCFE8724" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_proc_generator" x="128" y="192" name="inst_93A1DF7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

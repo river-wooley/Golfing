@@ -38,7 +38,7 @@ for (var grid_y = 0; grid_y &lt; GRID_SQUARE_SIZE; grid_y += 16) {
 tree_count = irandom_range(5, 8);
 
 for (var i = 0; i &lt; tree_count; i++) {
-    instance_create(x + irandom(GRID_SQUARE_SIZE - 16), y + irandom(GRID_SQUARE_SIZE - 16), o_tree);
+    instance_create(x + irandom_range(3, GRID_SQUARE_SIZE - 13), y + irandom_range(3, GRID_SQUARE_SIZE - 13), o_tree);
 }
 </string>
           </argument>

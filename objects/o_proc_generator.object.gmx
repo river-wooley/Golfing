@@ -32,9 +32,7 @@ xcount = room_width / GRID_SQUARE_SIZE;
 ycount = room_height / GRID_SQUARE_SIZE;
 play_grid = ds_grid_create(xcount, ycount);
 
-maxpos = (room_width / GRID_SQUARE_SIZE) - 1;
-startingpos = irandom_range(0, maxpos) * GRID_SQUARE_SIZE;
-x_generate_row(startingpos, 0);
+x_prod_generate();
 </string>
           </argument>
         </arguments>

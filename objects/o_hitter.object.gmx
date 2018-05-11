@@ -200,7 +200,9 @@ if (second_pass) {
 
 if (second_pass) {
     with(instance_find(o_xhair, 0)) {
+    if (current_club == club.driver) {
         current_club = club.wedge;
+    }
         current_state = state.marking;
         x = lastx;
         y = lasty;

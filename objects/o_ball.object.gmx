@@ -207,13 +207,17 @@ if (image_xscale == 1.0) {
         speed -= DRAG;
     } else if (position_meeting(x, y, o_sand)) {
         speed = 0;
-    } else if (position_meeting(x, y, o_hole)) {
-        room_restart();
     } else if (position_meeting(x, y, o_tree)) {
         last_speed = speed;
         speed = 0;
         motion_add(180 + direction, last_speed / 2);
     }
+}
+
+xhair = instance_find(o_xhair, 0);
+
+if (position_meeting(x, y, o_hole) &amp;&amp; xhair.current_club == club.putter) {
+        room_restart();
 }
 
 </string>

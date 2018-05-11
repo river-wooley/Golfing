@@ -431,8 +431,11 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="3">
-      <constant name="MAX_SPEED">2</constant>
+    <constants number="6">
+      <constant name="BALL_AIR_CUTOFF">7</constant>
+      <constant name="DRAG">0.4</constant>
+      <constant name="MAX_DISTANCE">400</constant>
+      <constant name="MAX_SPEED">37</constant>
       <constant name="MAX_BALL_IMAGE_SPEED">0.5</constant>
       <constant name="GRID_SQUARE_SIZE">64</constant>
     </constants>

@@ -16,7 +16,9 @@ if (b_firstrow) {
 // Generate remaining fairway
 enum dir {left, right};
 land_dir = irandom_range(0, 1);
-max_fairway = irandom_range(0, (room_width / GRID_SQUARE_SIZE) - 2);
+
+
+max_fairway = irandom_range(1, (room_width / GRID_SQUARE_SIZE) - 2);
 fairway_count =  0;
 currentpos = startpos;
 lastpos = currentpos;

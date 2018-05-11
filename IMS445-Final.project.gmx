@@ -15,6 +15,9 @@
     <sprite>sprites\s_sand</sprite>
     <sprite>sprites\s_green</sprite>
     <sprite>sprites\s_hole</sprite>
+    <sprite>sprites\s_xhair</sprite>
+    <sprite>sprites\s_hitter</sprite>
+    <sprite>sprites\s_hit</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -27,6 +30,8 @@
   <objects name="objects">
     <objects name="Player">
       <object>objects\o_ball</object>
+      <object>objects\o_golfer</object>
+      <object>objects\o_xhair</object>
     </objects>
     <objects name="Procedural Generation">
       <object>objects\o_proc_generator</object>
@@ -42,6 +47,10 @@
       <object>objects\o_tree</object>
       <object>objects\o_green</object>
       <object>objects\o_hole</object>
+    </objects>
+    <objects name="Hitting">
+      <object>objects\o_hitter</object>
+      <object>objects\o_hit</object>
     </objects>
   </objects>
   <rooms name="rooms">

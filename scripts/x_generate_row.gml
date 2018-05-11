@@ -52,3 +52,4 @@ for (i = 0; i < room_width; i += GRID_SQUARE_SIZE) {
 }
 
 return lastpos;
+

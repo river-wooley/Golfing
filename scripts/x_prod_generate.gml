@@ -11,3 +11,4 @@ for(var i = 0; i < room_height; i+= GRID_SQUARE_SIZE) {
 
 // Generate player in the center
 instance_create(startingpos + (GRID_SQUARE_SIZE / 2), room_height - (GRID_SQUARE_SIZE / 2), o_ball);
+

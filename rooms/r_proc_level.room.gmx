@@ -52,6 +52,7 @@
   </views>
   <instances>
     <instance objName="o_proc_generator" x="128" y="192" name="inst_93A1DF7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_par_counter" x="192" y="192" name="inst_6C663D05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

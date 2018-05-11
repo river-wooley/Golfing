@@ -33,8 +33,35 @@ image_speed = 0;
 lastx = x;
 lasty = y;
 b_outside_room = false;
+b_hit_flag = false;
 
 instance_create(x, y, o_xhair);
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Restart game when flag is hit
+
+room_restart();
 
 </string>
           </argument>
@@ -58,7 +85,7 @@ instance_create(x, y, o_xhair);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Reset ball
+            <string>/// Reset ball when outside room
 x = lastx;
 y = lasty;
 b_outside_room = false;
@@ -216,8 +243,14 @@ if (image_xscale == 1.0) {
 
 xhair = instance_find(o_xhair, 0);
 
-if (position_meeting(x, y, o_hole) &amp;&amp; xhair.current_club == club.putter) {
-        room_restart();
+if (position_meeting(x, y, o_hole) &amp;&amp; xhair.current_club == club.putter &amp;&amp; !b_hit_flag) {
+        speed = 0;
+        visible = false;
+        alarm[1] = room_speed * 2;
+        with (instance_find(o_golfer, 0)) {
+            visible = false;
+        }
+        b_hit_flag = true;
 }
 
 </string>

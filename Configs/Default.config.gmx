@@ -431,7 +431,8 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="6">
+    <constants number="7">
+      <constant name="PAR">4</constant>
       <constant name="BALL_AIR_CUTOFF">7</constant>
       <constant name="DRAG">0.4</constant>
       <constant name="MAX_DISTANCE">400</constant>

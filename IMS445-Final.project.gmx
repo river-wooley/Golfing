@@ -27,6 +27,9 @@
     <script>scripts\x_prod_generate.gml</script>
     <script>scripts\x_generate_row.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\f_coderscrux</font>
+  </fonts>
   <objects name="objects">
     <objects name="Player">
       <object>objects\o_ball</object>
@@ -51,6 +54,9 @@
     <objects name="Hitting">
       <object>objects\o_hitter</object>
       <object>objects\o_hit</object>
+    </objects>
+    <objects name="Misc.">
+      <object>objects\o_par_counter</object>
     </objects>
   </objects>
   <rooms name="rooms">
